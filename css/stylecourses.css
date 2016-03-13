@@ -1,0 +1,108 @@
+html,body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    
+    
+    
+}    
+
+body{
+background-color: white;
+background-image: url(http://geekwiseacademy.com/img/owl-courses.png);
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+
+header{
+    margin: 20px;
+    padding: 0;
+    background-color: #7a1501;
+    color: white;
+}
+
+nav{
+   text-align:center;
+    height:5rem;
+    width:100%;
+    display:block;
+}
+
+ul{
+    display:inline-block;
+    list-style:none;
+    line-height:1rem;
+}
+
+
+li{
+    padding:1rem;
+    display:inline;
+    float:left;
+    height:1rem;
+    font-size:1rem;
+    text-transform:uppercase;
+}
+
+.active{
+    
+    background-color: #f9da0c;
+
+}
+
+.active > a{
+    color:#7a1501;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    background-color: #f9da0c;
+}
+
+
+nav > .active-signup a{
+  color: #7a1501;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight:700;
+    font-size: .9em;
+    display: block;
+    background-color:#f9da0c;
+    text-align: center;
+}
+
+
+.active-signup a{
+    color: #7a1501;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight:700;
+    padding: 15px 12px 15px 10px;
+    font-size: .9em;
+    display: block;
+    background-color:#f9da0c;
+    text-align: center;
+}
+
+.we_teach{
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: black;
+    
+}
+
+main{
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
