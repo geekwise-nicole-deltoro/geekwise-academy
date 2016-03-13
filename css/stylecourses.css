@@ -1,0 +1,58 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.top_page{
+    margin: 20px;
+    padding: 0;
+}
+
+nav{
+   text-align:center;
+    height:5rem;
+    width:100%;
+    display:block;
+}
+ul{
+    display:inline-block;
+    list-style:none;
+    line-height:1rem;
+}
+li{
+    padding:1rem;
+    display:inline;
+    float:left;
+    height:1rem;
+    font-size:1rem;
+    text-transform:uppercase;
+}
+.active{
+    
+    background-color: #f9da0c;
+
+}
+.active > a{
+    color:#7a1501;
+}
+
+a{
+    
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    background-color: #f9da0c;
+}
+
+.geekwise{
+    position: relative;
+    top:30px;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
