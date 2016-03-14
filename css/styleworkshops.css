@@ -19,57 +19,31 @@ background-attachment: fixed;
 }
 
 
+
+
 header{
     margin: 0 auto;
     padding: 0;
     background-color: #7a1501;
     color: white;
-    height: 29%;
+    height: 32%;
 }
  
-
 #logo{
     margin: 0 auto;
+    
 }
+
 
 nav{
     margin: 0 auto;
-    height:4rem;
+    height:7rem;
     width:75%;
-    float: right;
-    text-align: center;
     font-size: 16px;
+    list-style: none;
 }
 
 
-ul.topnav {
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-    background-color: #7a1501;
-}
-
-ul.topnav li {
-    margin: 0 auto;
-    float: left;
-    font-weight: 800;
-}
-
-ul.topnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px 18px;
-    text-decoration: none;
-}
-
-
-
-.active{
-    
-    background-color: #f9da0c;
-
-}
 
 
 a {
@@ -77,18 +51,24 @@ a {
     color: #f9da0c;
 }
 
-a:hover{
+
+
+.active{
+    color: #7a1501;
     background-color: #f9da0c;
+
 }
 
-h3{
+
+
+h4{
     margin: 0 auto;
-}
-
-.active > a{
-    color:#7a1501;
+    font-family: sans-serif;
     
 }
+
+
+
 
 main{
     margin: 0 auto;
