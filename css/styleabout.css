@@ -63,12 +63,8 @@ li{
 .active > a{
     color:#7a1501;
 }
-.fa{
-    visibility: hidden;
-}
-.list{
-    visibility: hidden;
-}
+
+
 
 a{
     
