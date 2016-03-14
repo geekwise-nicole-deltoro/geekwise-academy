@@ -100,6 +100,12 @@ main{
 }
 
 
+#block_title{
+    padding-bottom: 8px;
+    border-bottom: 1px solid #afafaf;
+    margin-bottom: 8px;
+
+}
 
 
 
