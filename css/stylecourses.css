@@ -81,7 +81,7 @@ a:hover{
     background-color: #f9da0c;
 }
 
-h3{
+h4{
     margin: 0 auto;
 }
 
@@ -115,7 +115,7 @@ header, nav, ul.topnav li.right,
     
     }
     
-    main, h3, footer{
+    main, h4, footer{
         margin: auto;
     }
 a., .we_teach {
