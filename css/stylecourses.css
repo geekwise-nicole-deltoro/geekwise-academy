@@ -212,24 +212,3 @@ header, nav, li.right,
     
 }
 
-@media only screen and (max-width:900px){
-    .fa{
-        visibility: visible;
-        color: gray;
-    }
-    .list{
-    width: auto;
-    height: auto;
-    font-size: 28px;
-    border: lightgrey solid .1rem;
-    border-radius: .5rem;
-    padding-left: 10px;
-    padding-right: 10px;
-    visibility: visible;
-        
-    }
-    
-    li{
-        visibility: hidden;
-    
-}
