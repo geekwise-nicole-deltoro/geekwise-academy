@@ -138,6 +138,14 @@ section{
     padding: 80px;
     width: 80%;
 }
+
+button{
+    width: 100%;
+    text-align: center;
+    background-color: #f9da0c; 
+    color:#7a1501;
+}
+
 footer{
     margin-left: 450px;
     float:left;
