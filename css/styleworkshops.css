@@ -23,32 +23,7 @@ header{
     background-color: #7a1501;
     color: white;
 }
-
-nav > .active-signup a{
-    color: #7a1501;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
-    font-weight:700;
-    font-size: .9em;
-    display: block;
-    background-color:#f9da0c;
-    text-align: center;
-}
-
-
-.active-signup a{
-    color: #7a1501;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
-    font-weight:700;
-    padding: 13px 9px 13px 7px;
-    font-size: .9em;
-    display: block;
-    background-color:#f9da0c;
-    text-align: center;
-}
+ 
 
 nav{
     margin: 0 auto;
@@ -56,6 +31,32 @@ nav{
     width:100%;
     display:block;
 }
+
+
+
+
+
+
+
+.active{
+    
+    background-color: #f9da0c;
+
+}
+
+.active > a{
+    color:#7a1501;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    background-color: #f9da0c;
+}
+
 
 ul.topnav {
     list-style-type: none;
@@ -86,15 +87,18 @@ ul.topnav li a.active {
 
 }
 
+
+
+
 .active  a{
     color:#7a1501;
 }
 
 ul.topnav li.right {
     text-align: center;
-
+    
+    
 }
-
 .we_teach{
     font-family: 'Lato', sans-serif;
     color: black;
@@ -103,7 +107,7 @@ ul.topnav li.right {
     
 }
 
-#logo{
+.logo_left{
     margin: auto;
     float: left;
 }

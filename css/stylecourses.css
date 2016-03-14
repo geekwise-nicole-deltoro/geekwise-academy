@@ -24,14 +24,22 @@ header{
     padding: 0;
     background-color: #7a1501;
     color: white;
+    
+}
+ 
+
+.logo_left{
+    margin: 0 auto;
+    float: left;
 }
 
 nav{
     margin: 0 auto;
     height:8rem;
     width:100%;
-    display:block;
-
+    text-align: center;
+    font-size: 16px;
+    float: right;
 }
 
 
@@ -45,6 +53,7 @@ ul.topnav {
 
 ul.topnav li {
     float: left;
+    font-weight: 800;
 }
 
 ul.topnav li a {
@@ -55,7 +64,7 @@ ul.topnav li a {
     text-decoration: none;
 }
 
-ul.topnav li a:hover(.active) {
+ul.topnav li a :hover(.active) {
     background-color: #f9da0c;
 }
 
@@ -69,9 +78,15 @@ ul.topnav li a.active {
 }
 
 ul.topnav li.right {
-    float: right;
+    text-align: center;
 
 }
+
+
+
+
+
+
 
 
 
@@ -93,6 +108,7 @@ li{
     text-transform:uppercase;
 }
 
+*/
 .active{
     
     background-color: #f9da0c;
@@ -112,7 +128,7 @@ a:hover{
     background-color: #f9da0c;
 }
 
-*/
+
 nav > .active-signup a{
     color: #7a1501;
     font-weight: bold;
