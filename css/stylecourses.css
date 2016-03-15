@@ -11,19 +11,18 @@ html,body{
     
 }    
 
-body{    
-background-color: white;
-background-image: url(http://geekwiseacademy.com/img/owl-courses.png);
-background-position: bottom right;
-background-repeat: no-repeat;
-background-attachment: fixed;
+body{
+    background-color:rgba(255,0,0,0.5);
+    background-image: url(http://geekwiseacademy.com/img/owl-courses.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     
 }
 
 
 header{
     margin: 0 auto;
-
     display: block;
     background-color: #7a1501;
     color: white;
@@ -36,6 +35,7 @@ header{
     color: black;
     font-size: 22px;
 }
+
 
 .fluff{
     margin: 50px;
@@ -51,9 +51,11 @@ nav{
     
 }
 
+
 li{
     list-style: none;
 }
+
 
 
 
@@ -62,6 +64,8 @@ ul.topnav li {
     float:left; 
     font-weight: 600;
 }
+
+
 
 ul.topnav li a {
     display: block;
@@ -94,11 +98,13 @@ a {
 
 
 a:hover{
-    background-color: yellow;
+    background-color:#7a1501;
 }
 
+
+
 hr{
-    border-bottom: soild 1 light grey;
+    border-bottom: soild 1px light grey;
 }
 
 
