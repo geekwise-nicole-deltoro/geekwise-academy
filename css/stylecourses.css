@@ -3,7 +3,8 @@ html,body{
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     width: 100%;
-
+    color: #000;
+    
 }
 
 body{
@@ -23,6 +24,8 @@ header{
     display: inline;
     background-color: #7a1501;
     color: #fff;
+    width: 100%;
+    height: 32%;
     height: 13em;
     
 }
@@ -30,6 +33,7 @@ header{
 #logo{
     color: black;
     font-size: 22px;
+    float: left;
 }
 
 .fluff{
