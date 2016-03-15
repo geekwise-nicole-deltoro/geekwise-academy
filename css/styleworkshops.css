@@ -6,12 +6,12 @@ html,body{
     width: 100%;
 }    
 
-body{    
-background-color: white;
-background-image: url(http://geekwiseacademy.com/img/owl-courses.png);
-background-position: bottom right;
-background-repeat: no-repeat;
-background-attachment: fixed;
+body{
+    background-color: white;
+    background-image: url(http://geekwiseacademy.com/img/owl-courses.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     
 }
 
