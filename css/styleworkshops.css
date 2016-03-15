@@ -1,9 +1,11 @@
 html,body{
     margin: 0 auto;
     padding: 0;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    background-color: #7a1501;
     width: 100%;
+    line-height:  1.42857143;
 }    
 
 body{
@@ -35,79 +37,75 @@ header{
     position: bottom;
 }
 
-
-ul.topnav {
+nav {
+    height: 40px;
+    width: 100%;
+    background: #7a1501;
+    font-size: 11pt;
+    font-family: 'sans-serif;
+    font-weight: bold;
+    position: relative;
+    border-bottom: 2px solid #f9da0c;
+}
+nav ul {
+    padding: 0;
     margin: 0 auto;
-    padding-left: 13em;
     list-style: none;
-    font-size: 20px;
-    height: 6.5em; 
     background-color: #7a1501;
+    width: 600px;
+    height: 40px;
 }
 
-ul.topnav li {
+
+nav li {
+    display: inline;
     float: left;
 }
 
 
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
 
-ul.topnav li a {
-    display: inline;
-    color: white;
-    padding: 14px 16px;
+
+nav a {
+    color: #fff;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
     text-decoration: none;
-}
-
-ul.topnav li a:hover:not(.active) {
-    background-color: :#f9da0c;
-
-}
-
-ul.topnav li a.active {
-    background-color:#f9da0c;
-
-}
-
-/*
-nav{
-    margin: 0 auto;
-    height:3rem;
-    width:100%;
-    font-size: 16px;
-    list-style: none;
-    
-}
-
-li{
-    list-style: none;
+    line-height: 40px;
+    text-shadow: 1px 1px 0px #7a1501;
 }
 
 
-
-ul.topnav li {
-    margin: 0 auto;
-    float:left; 
-    font-weight: 600;
+nav li a {
+    border-right: 1px solid #fff;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
 }
 
-ul.topnav li a {
-    display: block;
-    color: white;
-    float: right;
-    padding: 16px 18px;
-    list-style: none;
-    text-decoration: none;
+nav li:last-child a {
+    border-right: 0;
 }
 
-
-
-.active{
-    text-decoration-color: #7a1501;
+nav a:hover, nav a:active {
     background-color: #f9da0c;
-
 }
 
-*/
+nav a#pull {
+    display: none;
+}  
+
 a {
     text-decoration: none;
     color: #f9da0c;
@@ -122,28 +120,21 @@ a {
     
 }
 
-
-a:hover{
-    background-color: #f9da0c;
-}
-
-
-
 hr{
     border-bottom: soild 1px #000;
 }
 
 #container{
-    margin: 0 auto;
+    margin: left;
+    margin: right;
     position: absolute;
     text-align: center;
-    
     
 }
 
 
 #content{
-    margin-left: 10em;
+    margin: 0 auto;
     display:block;
     box-sizing: border-box;
     width: 80%;
@@ -158,9 +149,10 @@ hr{
 .enroll{
     background-color:#f9da0c;
     text-transform: uppercase;
-    width: 45px;
-    height: 15px;
+    width: 32px;
+    height: 18px;
     color:#7a1501;
+    
 }
 
 .enroll_sign{
@@ -205,25 +197,31 @@ footer{
 }
 
 
-@media only screen and (max-width:480px){
-    body{ 
-        background-image: none;
+    @media only screen and (max-width : 480px) {
+    nav {
+        border-bottom: 0;
     }
-    p{
-        font-size: 15px;
-        
-    } 
-    .geekwise{
-        height: 500px;
+    nav ul {
+        display: none;
+        height: auto;
     }
-    
-    
-    .active{
+    nav a#pull {
+        display: block;
+        background-color: #7a1501;
+        width: 100%;
         position: relative;
-        top:-160px;
-        margin-left: 200px;
-        visibility: visible;
     }
+    nav a#pull:after {
+        content:"";
+        background: url('nav-icon.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+}
     .none{
         visibility: visible;
     }
@@ -244,8 +242,7 @@ footer{
     }
     
     
-header, nav, li.right, 
-    ul.topnav li {
+header, nav, li ul {
         float: none;
     
     }
@@ -262,147 +259,5 @@ header, nav, li.right,
         width: 100%;
     }
     
-    
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-html,body{
-    margin: 0 auto;
-    padding: 0;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    width: 100%;
-    height: 100%;
     
-}    
-
-body{
-    
-background-color: white;
-background-image: url(http://geekwiseacademy.com/img/owl-courses.png);
-background-position: bottom right;
-background-repeat: no-repeat;
-background-attachment: fixed;
-    
-}
-
-
-
-
-header{
-    margin: 0 auto;
-    padding: 0;
-    background-color: #7a1501;
-    color: white;
-    height: 32%;
-}
- 
-#logo{
-    margin: 0 auto;
-    
-}
-
-
-nav{
-    margin: 0 auto;
-    height:7rem;
-    width:75%;
-    font-size: 16px;
-    list-style: none;
-}
-
-
-
-
-a {
-    text-decoration: none;
-    color: #f9da0c;
-}
-
-
-
-.active{
-    color: #7a1501;
-    background-color: #f9da0c;
-
-}
-
-
-
-h4{
-    margin: 0 auto;
-    font-family: sans-serif;
-    
-}
-
-
-
-
-main{
-    margin: 0 auto;
-    padding: 0;
-    line-height: 1em;
-    width: 100%;
-    display: block;
-    text-align: center;
-}
-
-
-#block_title{
-    padding-bottom: 8px;
-    border-bottom: 1px solid #afafaf;
-    margin-bottom: 8px;
-
-}
-
-
-
-@media screen and (max-width: 600px){
-    body, #logo{
-        width: 100%;
-    }
-    
-    
-    header, nav, ul.topnav li.right, 
-    ul.topnav li {
-        float: none;
-    
-    }
-    
-    main, h3, footer{
-        margin: auto;
-    }
-    
-    
-    a.{
-        margin: 0 auto;
-    }
-}
-
