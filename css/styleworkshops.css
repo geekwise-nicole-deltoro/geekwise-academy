@@ -4,6 +4,301 @@ html,body{
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     width: 100%;
+}    
+
+body{    
+background-color: white;
+background-image: url(http://geekwiseacademy.com/img/owl-courses.png);
+background-position: bottom right;
+background-repeat: no-repeat;
+background-attachment: fixed;
+    
+}
+
+
+header{
+    margin: 0 auto;
+    background-color: #7a1501;
+    color: white;
+    height: 13em;
+}
+ 
+
+#logo{
+    color: black;
+    font-size: 22px;
+}
+
+.fluff{
+    margin: 0 auto;
+    font-size: 18px;
+    position: bottom;
+}
+
+
+ul.topnav {
+    margin: 0 auto;
+    padding-left: 13em;
+    list-style: none;
+    font-size: 20px;
+    height: 6.5em; 
+    background-color: #7a1501;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+
+
+ul.topnav li a {
+    display: inline;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: :#f9da0c;
+
+}
+
+ul.topnav li a.active {
+    background-color:#f9da0c;
+
+}
+
+/*
+nav{
+    margin: 0 auto;
+    height:3rem;
+    width:100%;
+    font-size: 16px;
+    list-style: none;
+    
+}
+
+li{
+    list-style: none;
+}
+
+
+
+ul.topnav li {
+    margin: 0 auto;
+    float:left; 
+    font-weight: 600;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    float: right;
+    padding: 16px 18px;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+.active{
+    text-decoration-color: #7a1501;
+    background-color: #f9da0c;
+
+}
+
+*/
+a {
+    text-decoration: none;
+    color: #f9da0c;
+}
+
+.active{
+    background-color: #f9da0c;
+    color: #7a1501;
+}
+.active > a{
+    color:#7a1501;
+    
+}
+
+
+a:hover{
+    background-color: #f9da0c;
+}
+
+
+
+hr{
+    border-bottom: soild 1px #000;
+}
+
+#container{
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    
+    
+}
+
+
+#content{
+    margin-left: 10em;
+    display:block;
+    box-sizing: border-box;
+    width: 80%;
+    text-align: left;
+    font-weight: 500;
+    font-size:18px;
+    line-height:1.9em;  
+}
+
+
+
+.enroll{
+    background-color:#f9da0c;
+    text-transform: uppercase;
+    width: 45px;
+    height: 15px;
+    color:#7a1501;
+}
+
+.enroll_sign{
+    padding: 8px;
+    color: #7a1501;
+}
+
+p{
+    position: bottom;
+
+}
+    
+.top_table{
+    box-sizing: border-box;
+    border-bottom: 3em solid black;
+}
+
+.lesson{
+    padding: 20px;
+    font-size: 14px;
+}
+
+main{
+    box-sizing: border-box;
+    color: #000;
+    width: 100%;
+}
+
+button{
+    text-align: center;
+    background-color: #f9da0c; 
+    color: #fff;
+}
+
+footer{
+    margin-left: 450px;
+    float:left;
+    padding: 20px;
+    height: 15px;
+    background-color:#f9da0c;
+    color:#7a1501;
+}
+
+
+@media only screen and (max-width:480px){
+    body{ 
+        background-image: none;
+    }
+    p{
+        font-size: 15px;
+        
+    } 
+    .geekwise{
+        height: 500px;
+    }
+    
+    
+    .active{
+        position: relative;
+        top:-160px;
+        margin-left: 200px;
+        visibility: visible;
+    }
+    .none{
+        visibility: visible;
+    }
+    
+    .enroll, .enroll sign{
+        display: block;
+    }
+
+    
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    body, #logo,{
+        width: 100%;
+    }
+    
+    
+header, nav, li.right, 
+    ul.topnav li {
+        float: none;
+    
+    }
+    
+    #fluffy{
+        display: inline;
+    }
+    
+    a :hover, {
+        margin: 0 auto;
+    }
+    
+    .container, .content, tr, td{
+        width: 100%;
+    }
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html,body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    width: 100%;
     height: 100%;
     
 }    
