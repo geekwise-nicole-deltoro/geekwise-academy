@@ -1,29 +1,126 @@
 html,body{
     margin: 0 auto;
-    padding: 0;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    align-content: center;
-    text-align: center;
-    
-}    
 
-body{    
-background-color: white;
+}
+
+body{
+    background-color: white;
 background-image: url(http://geekwiseacademy.com/img/owl-courses.png);
 background-position: bottom right;
 background-repeat: no-repeat;
 background-attachment: fixed;
+    
     
 }
 
 
 header{
     margin: 0 auto;
+    text-align: center;
+    display: inline;
+    background-color: #7a1501;
+    color: #fff;
+    height: 13em;
+    
+}
 
+#logo{
+    color: black;
+    font-size: 22px;
+}
+
+.fluff{
+    margin: 0 auto;
+    font-size: 18px;
+    position: bottom;
+}
+
+
+.nav {
+	position: relative;
+	margin: 20px 0;
+}
+
+
+.nav ul {
+	margin: 0;
+	padding: 0;
+    list-style: none;
+    font-size: 20px;
+    background-color: #7a1501;
+}
+
+
+.nav li {
+	margin: 0 5px 10px 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+
+
+.nav a {
+	padding: 3px 12px;
+	text-decoration: none;
+	color: #000;
+	line-height: 100%;
+}
+
+
+.nav a:hover {
+	color: ##7a1501;
+    background-color: #f9da0c;
+}
+
+
+.nav .active a {
+	background: #f9da0c;
+	color: #7a1501;
+	border-radius: 5px;
+}
+
+
+.nav.right ul {
+	text-align: right;
+}
+
+
+.nav.center ul {
+	text-align: center;
+}
+
+
+.active{
+    font-family: sans-serif;
+    background-color: #f9da0c;
+    color: #7a1501; 
+}
+
+
+a .active{
+    float: none;
+    
+}
+
+
+
+
+/*
+body{
+    background-color:rgba(255,0,0,0.5);
+    background-image: url(http://geekwiseacademy.com/img/owl-courses.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+
+header{
+    margin: 0 auto;
     display: block;
     background-color: #7a1501;
     color: white;
@@ -36,6 +133,7 @@ header{
     color: black;
     font-size: 22px;
 }
+
 
 .fluff{
     margin: 50px;
@@ -51,9 +149,11 @@ nav{
     
 }
 
+
 li{
     list-style: none;
 }
+
 
 
 
@@ -62,6 +162,8 @@ ul.topnav li {
     float:left; 
     font-weight: 600;
 }
+
+
 
 ul.topnav li a {
     display: block;
@@ -72,7 +174,7 @@ ul.topnav li a {
     text-decoration: none;
 }
 
-
+*/
 
 .active{
     text-decoration-color: #7a1501;
@@ -94,20 +196,35 @@ a {
 
 
 a:hover{
-    background-color: yellow;
+    background-color:#7a1501;
 }
+
+
 
 hr{
-    border-bottom: soild 1 light grey;
+    border-bottom: soild 1px #000;
 }
 
 
-.text_content{
+#container{
     margin: 0 auto;
-    float: left;
-    display: block;
+    position: absolute;
+    text-align: center;
+    
+    
 }
 
+
+#content{
+    margin-left: 10em;
+    display:block;
+    box-sizing: border-box;
+    width: 80%;
+    text-align: left;
+    font-weight: 500;
+    font-size:18px;
+    line-height:1.9em;  
+}
 
 
 .enroll{
@@ -134,10 +251,15 @@ p{
     padding: 20px;
     font-size: 18px;
 }
+
+
+
 section{
     padding: 80px;
     width: 80%;
 }
+
+
 
 button{
     width: 100%;
@@ -145,6 +267,7 @@ button{
     background-color: #f9da0c; 
     color:#7a1501;
 }
+
 
 footer{
     margin-left: 450px;
@@ -164,13 +287,14 @@ footer{
         font-size: 15px;
         
     } 
-    .geekwise{
-        height: 500px;
+    
+    .container .content{
+        box-sizing: border-box;
+        
+        
     }
-    span{
-
-        width: 50%;
-    }
+    
+        
     .active{
         position: relative;
         top:-160px;
@@ -189,22 +313,30 @@ footer{
 
 @media screen and (max-width: 600px){
     body, #logo,{
-        width: 100%;
-    }
+         width: 100%;
+}
     
     
-header, nav, li.right, 
-    ul.topnav li {
+    header, nav,  {
         float: none;
     
-    }
+}
     
- h3{
+    hr{
         margin: auto;
-    }
+}
     
     a :hover, {
         margin: 0 auto;
+}
+    .enroll, .enroll_sign,{
+        line-height: 1.9em;
+        
+}
+        .top-table, ..lesson, main,
+        button, footer{
+        font-family: sans-serif;
+        
     }
     
     
