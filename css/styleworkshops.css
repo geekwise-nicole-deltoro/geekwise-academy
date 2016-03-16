@@ -1,12 +1,10 @@
 html,body{
-    margin: 0 auto;
+     margin: 0 auto;
     padding: 0;
-    font-family: "Helvetica Neue",sans-serif;
-    font-size: 16px;
-    background-color: #fff;
-    width: 100%;
-    line-height:  1.42857143;
+    height: 100%;
     color: #000;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
 }    
 
 body{
@@ -20,72 +18,62 @@ body{
 
 
 header{
-    margin: 0 auto;
-    background-color: #7a1501;
-    color: white;
-    height: 27%;
-    text-decoration-color: #fff;
+margin: 0 auto;
+background-color: #7a1501;
+height: 180px;
+
 }
  
-
 #logo{
-    color: black;
-    font-size: 22px;
-}
-
-.fluff{
-    margin: 0 auto;
-    font-size: 18px;
-    position: bottom;
+    color: #fff;
+    width: 151px;
+    height: 43px;
+        
 }
 
 
-.nav-collapse ul {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: block;
-  list-style: none;
+/* nav */
+.nav {
+margin: 0 auto;
+display: inline;
+text-align: center;
 }
 
-.nav-collapse li {
-  width: 100%;
-  display: block;
+.nav ul {
+	margin: 0;
+	padding: 0;
+    color: white;
+}
+.nav li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+    color: #7a1501;
+}
+.nav a {
+	padding: 3px 12px;
+	text-decoration: none;
+	color: #fff;
+	line-height: 100%;
+}
+.nav a:hover {
+	color: yellow;
+}
+.nav .current a {
+	background: yellow;
+	color: #7a1501;
+	border-radius: 5px;
 }
 
-.js .nav-collapse {
-  clip: rect(0 0 0 0);
-  max-height: 0;
-  position: absolute;
-  display: block;
-  overflow: hidden;
-  zoom: 1;
+/* right nav */
+.nav.right ul {
+	text-align: right;
 }
 
-.nav-collapse.opened {
-  max-height: 9999px;
-}
-
-.nav-toggle {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
-
-@media screen and (min-width: 40em) {
-  .js .nav-collapse {
-    position: relative;
-  }
-  .js .nav-collapse.closed {
-    max-height: none;
-  }
-  .nav-toggle {
-    display: none;
-  }
+/* center nav */
+.nav.center ul {
+	text-align: center;
 }
 
 
@@ -96,14 +84,69 @@ button{
 }
 
 footer{
-    margin-left: 450px;
-    float:left;
+    margin: 0 auto;
     padding: 20px;
-    height: 15px;
+    height: 50px;
     background-color:#f9da0c;
     color:#7a1501;
 }
 
+@media screen and (max-width: 600px) {
+	.nav {
+		position: relative;
+		min-height: 50px;
+	}	
+	.nav ul {
+		width: 160px;
+		padding: 5px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: none;
+		border-radius: 
+	}
+	.nav li {
+		display: none; /* hide all <li> items */
+		margin: 0;
+	}
+	.nav .current {
+		display: block; /* show only current <li> item */
+	}
+	.nav a {
+		display: block;
+		padding: 5px 5px 5px 32px;
+		text-align: left;
+	}
+	.nav .current a {
+		background: yellow;
+		color: #000;
+	}
+
+	/* on nav hover */
+	.nav ul:hover {
+		background-image: none;
+	}
+	.nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	.nav ul:hover .current {
+		background: none;
+	}
+
+	/* right nav */
+	.nav.right ul {
+		left: auto;
+		right: 0;
+	}
+
+	/* center nav */
+	.nav.center ul {
+		left: 50%;
+		margin-left: -90px;
+	}
+	
+}
 
     
     
