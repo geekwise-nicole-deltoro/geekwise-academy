@@ -120,19 +120,10 @@ footer{
 /*----- Toggle Button -----*/
 .toggle-nav {
     display:none;
-    color: #000;
+    
 }
 /*----- Menu -----*/
-@media screen and (min-width: 860px) {
-    .menu {
-        width:100%;
-        height: 32%;
-        padding:10px 18px;
-        color: #fff;
-        border-radius:3px;
-        background:#7a1501;
-    }
-}
+
 .menu ul {
     display:inline-block;
     text-align: center;
@@ -195,12 +186,34 @@ footer{
     .button {
         width:40px;
     }
+    .toggle-nav:hover, .toggle-nav.active {
+        text-decoration:none;
+        color: #000;
+        visibility: visible;
+    }
+    
 }
+@media screen and (max-width: 940px){
+
+  .menu{
+        display: none;
+        visibility: hidden;
+        
+        
+    }
+
+
+
+}
+
+
 @media screen and (max-width: 860px) {
     .menu {
         position:relative;
         display:inline-block;
     }
+  
+  
     .menu ul.active {
         display:none;
         color: #fff
@@ -236,6 +249,21 @@ footer{
         text-decoration: none;
         display:block;
     }
+    
+    
+
+    
+     .menu {
+        width:100%;
+        height: 32%;
+        padding:10px 18px;
+        color: #fff;
+        border-radius:3px;
+        background:#7a1501;
+    }
+    
+    
+    
     .toggle-nav {
         padding:20px;
         float:left;
@@ -245,10 +273,12 @@ footer{
         color:#000;
         font-size: 14px;
         transition: none;
+        visibility: visible;
     }
     .toggle-nav:hover, .toggle-nav.active {
         text-decoration:none;
-        color:#fff;
+       color:#fff;
+       background-color: #7a1501;
     }
     .button {
         clear: both;
@@ -257,10 +287,12 @@ footer{
     }
   
 }
-jQuery(document).ready(function() {
+jQuery(document).ready(function(#) {
     jQuery('.toggle-nav').click(function(e) {
 jQuery(this).toggleClass('active');
         jQuery('.menu ul').toggleClass('active');
+        
+        
         e.preventDefault();
     });
 });

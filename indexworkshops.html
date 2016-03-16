@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/styleworkshops.css">
     <link rel="icon" type="image/png" href="http://geekwiseacademy.com/img/geekwise-favicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="responsive-nav.css">
+    <script src="responsive-nav.js"></script> 
 <title>Geekwise Academy|Workshops</title></head>
            
 <header>
@@ -15,10 +16,13 @@
 <img src="http://i.imgur.com/c5eHGdW.png" style=" width:141px; height:57px; border:none;" alt="log" title="geekwise logo"/></div>
     </header>
     
-  <body>  
-<nav class="clearfix">
-    <ul class="clearfix">
-        <li><a href="indexabout.html">ABOUT</a></li>
+  <body>
+  
+  
+  
+  <nav class="nav-collapse">
+  <ul>
+     <li><a href="indexabout.html">ABOUT</a></li>
         <li><a href="indexabout.html">ABOUT</a></li>
         <li><a href="indexcourses.html">COURSES</a></li>
         <li><a href="indexworkshops.html">WORKSHOPS</a></li>
@@ -26,6 +30,8 @@
                 <a href="http://geekwiseacademy.com/signup">SIGNUP</a></li>
                     <li><a href="indexteam.html">TEAM</a></li></ul>
                         <a href="indexcontact.html" id="pull">CONTACT</a></nav>
+
+     
 
     
     
@@ -73,6 +79,8 @@
         
            </div>
     
-        
+<script>
+  var nav = responsiveNav(".nav-collapse");
+</script>
     </body>
 </html>
