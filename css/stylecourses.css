@@ -42,8 +42,7 @@ header{
 }
 
 .fluff{
-    margin: 0 auto;
-    display: block;
+position: bottom;
     font-weight: 800;
     font-size: 20px;
     font-family: 'Lato', sans-serif; 
