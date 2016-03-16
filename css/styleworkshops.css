@@ -26,8 +26,8 @@ height: 180px;
  
 #logo{
     color: #fff;
-    width: 151px;
-    height: 43px;
+    width: 90px;
+    height: 100px;
         
 }
 
@@ -77,19 +77,7 @@ text-align: center;
 }
 
 
-button{
-    text-align: center;
-    background-color: #f9da0c; 
-    color: #fff;
-}
 
-footer{
-    margin: 0 auto;
-    padding: 20px;
-    height: 50px;
-    background-color:#f9da0c;
-    color:#7a1501;
-}
 
 @media screen and (max-width: 600px) {
 	.nav {
@@ -119,7 +107,9 @@ footer{
 	}
 	.nav .current a {
 		background: yellow;
-		color: #000;
+		color: #7a1501;
+        width: 72px;
+        text-align: left;
 	}
 
 	/* on nav hover */
@@ -128,7 +118,7 @@ footer{
 	}
 	.nav ul:hover li {
 		display: block;
-		margin: 0 0 5px;
+		margin: 15px;
 	}
 	.nav ul:hover .current {
 		background: none;
@@ -146,7 +136,47 @@ footer{
 		margin-left: -90px;
 	}
 	
+
+
+    .container{
+    margin: 0 auto;
+    float: left;
+    margin-left: 14%;
+    width: 75%;
+    overflow: hidden;
+
+    }
+
+    .content, .content_two, .content_three{
+              text-align: center;
+              font-size: 16px;
+              color: black;
+    }
+    
+    
+    
+    .button-signup a{
+    color: #7a1501;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight:700;
+    padding: 15px 12px 15px 10px;
+    font-size: .9em;
+    display: block;
+    background-color:#f9da0c;
+    text-align: center;
 }
 
-    
+.yellow-button {
+    color: #7a1501;
+    background-color: #f9da0c
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding: 15px 12px 15px 10px;
+    font-size: 1.1em;
+    background-color: #f9da0c;
+    text-align: center;
     
