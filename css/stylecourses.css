@@ -3,7 +3,6 @@ html,body{
     padding: 0;
     height: 100%;
     display: block;
-    background-color: #7a1501;
     color: #000;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
@@ -42,7 +41,7 @@ header{
 }
 
 .fluff{
-position: bottom;
+float: right;
     font-weight: 800;
     font-size: 20px;
     font-family: 'Lato', sans-serif; 
@@ -58,23 +57,22 @@ position: bottom;
     color: #000;
     font-size: 16px;
 }
-#content{
-    margin: 0 auto;
-    box-sizing: border-box;
-    width: 100%;
-    font-weight: 700;
-    line-height:1.9em;  
+
+#one, #two, 
+#three, #four, #five, #six{
+    margin: 0 auto;                
+    text-align: center;
 }
+    
 
 .enroll{
 
     text-transform: uppercase;
-    color: #7a1501;
     
     
 }
 .enroll_sign{
- background-color:#f9da0c;
+    background-color:#f9da0c;
     padding: 8px;
     color: #7a1501;
     line-height: 7em;
@@ -85,9 +83,11 @@ position: bottom;
     margin: 0 auto;
     box-sizing: border-box;
     border-bottom: none;
+    text-align: center;
 
-     
+
 }
+
 
 .lesson{
     padding: 20px;
@@ -110,10 +110,10 @@ button{
     color:#7a1501;
 }
 footer{
-    margin-left: 450px;
-    float:left;
-    padding: 20px;
-    height: ;
+    margin: 0 auto;
+    width: 100%;
+    
+    
     background-color:#f9da0c;
     color:#7a1501;
 }
@@ -241,7 +241,7 @@ footer{
         float:left;
         display:inline-block;
         border-radius:3px;
-        background:#7a150;
+        background:#7a1501;
         color:#000;
         font-size: 14px;
         transition: none;
@@ -255,9 +255,7 @@ footer{
         margin: 12px 15px;
         float:left;
     }
-    .search-form input {
-        box-shadow:-1px 2px yellow;
-    }
+  
 }
 jQuery(document).ready(function() {
     jQuery('.toggle-nav').click(function(e) {
