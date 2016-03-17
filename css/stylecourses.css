@@ -3,7 +3,7 @@ html,body{
     padding: 0;
     height: 100%;
     display: block;
-    color: #000;
+    color: #fff;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
 
@@ -22,6 +22,12 @@ body{
 }
 
 
+header{
+margin: 0 auto;
+background-color: #7a1501;
+height: 180px;
+
+}
 
 .fluff{
     float: right;
@@ -33,12 +39,6 @@ body{
 
 
 
-header{
-margin: 0 auto;
-background-color: #7a1501;
-height: 180px;
-
-}
  
 #logo{
     color: #fff;
@@ -48,7 +48,6 @@ height: 180px;
 }
 
 
-/* nav */
 .nav {
 margin: 0 auto;
 display: inline;
@@ -138,7 +137,6 @@ footer{
 		color: #000;
 	}
 
-	/* on nav hover */
 	.nav ul:hover {
 		background-image: none;
 	}
@@ -150,16 +148,15 @@ footer{
 		background: none;
 	}
 
-	/* right nav */
+
 	.nav.right ul {
 		left: auto;
 		right: 0;
 	}
 
-	/* center nav */
+	
 	.nav.center ul {
-		left: 50%;
-		margin-left: -90px;
+
 	}
 	
 }
@@ -201,10 +198,11 @@ footer{
     margin: 0 auto;
     box-sizing: border-box;
     border-bottom: none;
-    
-
-
+    font-weight: 600;
+    color: #000;
 }
+
+#
 
 
 .lesson{
