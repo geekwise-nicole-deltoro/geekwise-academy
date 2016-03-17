@@ -1,99 +1,259 @@
-html,body{
+html{
     margin: 0;
     padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    width: 600px;
+    -webkit-font-smoothing: antialiased;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    font-weight: f;
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+/*main header*/
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    display: flex;
+    width: 765px x 55px;
+    flex-direction: column;
+    text-align: center;
+}
+
+header > div#logo {
+        line-height: 70px;
+        position: relative;
+    }
+    
+    header > .menuDown {
+        box-shadow: 0 3px 5px rgba(0,0,0,.15);
+    }
+    
+    header > .menuUp {
+        box-shadow: none;
+    }
+    
+        header > div#logo > h1 {
+            color: white;
+            font-weight: 300;
+            text-transform: lowercase;
+        }
+        
+        header > div#logo > div#navToggle {
+            background-color: rgba(0,0,0,.15);
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: 300ms all ease;
+        }
+            
+            header > div#logo > div#navToggle:hover {
+                background-color: rgba(0,0,0,.1);
+            }
+            
+            header > div#logo > div#navToggle > a {
+                color: rgba(255,255,255,.85);
+                display: block;
+                font-size: 0.85em;
+                font-weight: 600;
+                padding: 0 2.5rem;
+                text-decoration: none;
+                transition: 300ms all ease;
+            }
+            
+                header > div#logo > div#navToggle:hover > a {
+                    color: rgba(255,255,255,1);
+                }
+
+
+
+/*navigation menu*/
+
+header > nav {
+    background-color: white;
+    color: #000;
+    display: none;
+    flex: 1;
+    transform: 300ms all ease;
+}
+
+
+    header nav > ul {
+        list-style-type: none;    
+
+        }
+        
+        header nav > ul > li {
+            border-bottom: 1px dotted rgba(0,0,0,.1);
+                position: relative;
+        
+                    }
+            
+        header nav > ul > li > a {
+            display: block;
+            color: rgb(126, 24, 5);
+            font-weight: 700;
+            padding: 1.5rem 0;
+            text-decoration: none;
+            transition: 250ms all ease;
+        }
+
+/* dropdown menu indicators */
+
+
+    header nav > ul > li:last-of-type {
+        border-bottom: none;    
+            }
+
+    header nav > ul > li > a span.toggle {
+        background-color: rgb(255,255,0);
+        border-radius: 3rem;
+        color: #7a1501;
+        font-size: 0.75em;
+        font-weight: 500;
+        padding: 2px 8px;
+        text-transform: lowercase;    
+        }
+
+    header nav > ul > li > a span.caret {
+        display: none;
+    }
+
+    header > nav > ul > li:hover > a {
+        color: rgb(122, 21, 1);  
+    }
+
+/*creating css dropdown menu*/
+
+
+    header > nav > ul > li > nav {
+        background-color: #fff;
+        border-radius: 1.5em;
+        box-shadow: 0 2px 8px rgb(255, 255, 0);
+        display: none;
+        overflow: hidden;
+        position: absolute;
+        right: 5%;
+        width: 90%;
+        z-index: 100;
+    }
+
+/*dropdown menu or subnavigation styling*/
+
+
+    header > nav > ul > li > nav > ul > li > a {
+        color: rgb(103, 18, 3);
+        transition: 300ms all ease;     
+            }
+    
+    header > nav > ul > li > nav > ul > li:hover > a {
+        background-color: #f7f307;
+        color: rgb(244, 240, 4);    
+    }
+
+/*adding toggle to navbar*/
+
+header > div#logo {
+    line-height: 70px;
+    position: relative;
+    visibility: ;
+}
+
+header > div#logo > h1 {
+    color: white;
+    font-weight: 300;
+    text-transform: lowercase;
     
 }
-body{
-    margin: 0;
-    padding: 0;
+
+/*main toggle button*/
+
+ header > div#logo > div#navToggle {
+        background-color: rgba(0,0,0,.15);
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: 300ms all ease;
 }
+    
+header > div#logo > div#navToggle:hover {
+        background-color: rgba(0,0,0,.1);
+    }
+    
+ header > div#logo > div#navToggle > a {
+        color: rgba(255,255,255,.85);
+        display: block;
+        font-size: 0.85em;
+        font-weight: 600;
+        padding: 0 2.5rem;
+        text-decoration: none;
+        transition: 300ms all ease;
+    }
+    
+        header > div#logo > div#navToggle:hover > a {
+            color: rgba(255,255,255,1);
+        }
+
+
 .top_page{
     margin: 20px;
     padding: 0;
 }
 
-nav{
-   text-align:center;
-    height:5rem;
-    width:100%;
-    display:block;
-}
-ul{
-    display:inline-block;
-    list-style:none;
-    line-height:1rem;
-}
-li{
-    padding:1rem;
-    display:inline;
-    float:left;
-    height:1rem;
-    font-size:1rem;
-    text-transform:uppercase;
-}
-.active{
-    
-    background-color: #f9da0c;
-
-}
-.active > a{
-    color:#7a1501;
-}
-
-a{
-    
-    text-decoration: none;
-    color: black;
-}
-a:hover{
-    background-color: #f9da0c;
-}
-
 .geekwise{
-    position: relative;
-    top:30px;
-    max-width: 100%;
-    height: auto;
-    text-align: center;
+    top:20em;
+    width: 600px;
+    height: 100%;
+    
 }
 h2{
-   position: relative;
-    top:30px;
+    margin: 0 auto;
+    top:15px;
     font-family: "franchise";
     font-size: 2.0em;
     text-align: center;
-    margin: 40px auto 0px auto;
+    margin-left: 5em;
     color: white;
     text-transform: uppercase;
 }
 h3{
-    position: relative;
-    top:30px;
-    font-family:"ciria";
+    font-family: sans-serif;
     font-size: 2.0em;
     font-weight:100;
     text-align: center;
-    margin: 0 auto;
+    margin-left: 5em;
     color: white;
     font-weight: thin;
     text-transform: lowercase;
 }
 hr{
    text-align: center;
-    width: 70%;
+    width: 87%;
+    color: #fff;
 }
 .bottom{
-    height:400px;
+    height:147px;
+    width: 100%;
     background-color:#7A1501; 
 }
 .icons{
-    position: relative;
+    text-align: center;
+
     top:50px;
     display: block;
     color: white;
     float: left;
     text-transform: uppercase;
-    text-align: center;
     width: calc(100%/3);
 }
 .lines{
@@ -101,86 +261,114 @@ hr{
     height: 90px;
     position: relative;
     top:-90px;
-    margin-left:400px;
+    margin-left:200px;
     width: 1px;
     vertical-align: middle;
 }
-.fa{
-    float: right;
-    text-align: right;
-    visibility: hidden;
-}
+
+
+
 .list{
     float: right;
     text-align: right;
-    visibility: hidden;
+
 }
 
 
 
+/*media query (maz-width 1150px)*/
 
-@media only screen and (max-width:1021px){
+
+@media screen and (max-width: 1150px) {
+    .wrap {
+        width:90%;
+    }
+    
     
     .lines{
         margin-left:300px;
     }
 }
-@media only screen and (max-width:900px){
-    .fa{
-        visibility: visible;
-        color: gray;
-    }
 
-    .list{
-    width:200px;
-    height: ;
-    font-size: 28px;
-    border: lightgrey solid .1rem;
-    border-radius: .5rem;
-    padding-left: 10px;
-    padding-right: 10px;
-    
-        
-    }
-    
-    #tiff{
-        display:none;
-    }
-    
-    #tiff:checked~#kao{
-    display: block;
-    visibility: visible;
-   
-}
-   
-    li{
-        text-align:left;
-        width: 100px;
-        color: black;
-        
-    }
-    nav{
-        
-        visibility: hidden;
-    }
 
-    .lines{
-        margin-left: 250px;
+
+        
+/* Medium screens */
+@media all and (min-width: 600px) {
+    header > div#logo > div#navToggle {
+        display: none;    
+    }
+    
+    header {
+        background-color: white;
+        flex-direction: row;
+        line-height: 90px;
+        padding: 0 3rem;
+        position: fixed;
+        text-align: left;
+        width: 100%;
+    }
+    
+        header > div#logo {
+            background-color: transparent;
+            line-height: 90px;
+        }
+    
+            header > div#logo > h1 {
+                color: #333;
+            }
+            
+    header > nav {
+        background-color: transparent;
+        display: block;
+    }
+    
+        header > nav > ul {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;    
+        }
+        
+            header nav > ul > li {
+                border-bottom: none;
+            }
+    
+                header nav > ul > li > a {
+                    padding: 0 1.25rem;
+                }
+                    
+                    header nav > ul > li > a span.toggle {
+                        display: none;    
+                    }
+                    
+            
+    
+    header > nav > ul > li:hover > nav {
+        background-color: rgb(51,51,51);
+        border-radius: .25em;
+        box-shadow: 0 2px 8px rgba(0,0,0,.6);
+        display: block;
+        line-height: 3em;
+        right: -50%;
+        width: 196px;
     }
 }
-@media only screen and (max-width:600px){
-    .lines{
-        margin-left:170px;
-    }
-}
+
+/*query (max-width: 480px)*/
+
+
+
+
+
+
 @media only screen and (max-width:480px){
-    img, nav, h2,{
+    h2,{
         width:100%;
         height: auto;
     }
     
-    fa fa-bars{
-        visibility: hidden;
+    .active{
+        position: relative;
     }
     
     .icons{
@@ -193,4 +381,6 @@ hr{
       visibility: hidden;
     }
 }
+
+    
 
