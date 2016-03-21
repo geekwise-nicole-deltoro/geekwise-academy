@@ -1,297 +1,155 @@
 html,body{
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    height: 100%;
-    display: block;
-    color: white;
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
-
 }
-
-
-
 body{
-    background-color: #fff;
-    background-image: url(http://geekwiseacademy.com/img/owl-courses.png);
+     background-image: url(http://i.imgur.com/YZOVy0w.png);
+    background-position:top right;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: bottom right;
-    
-    
-}
-
-
-header{
-margin: 0 auto;
-background-color: #7a1501;
-height: 180px;
+    margin: 0;
+    padding: 0;
 
 }
-
-.fluff{
-    float: right;
-    font-weight: 800;
-    font-size: 16px;
-    font-family: 'Lato', sans-serif; 
-    color: #fff;
-}
-
-
-
- 
-#logo{
-    color: #fff;
-    width: 151px;
-    height: 43px;
-        
-}
-
-
-.nav {
-margin: 0 auto;
-display: inline;
-text-align: center;
-}
-
-.nav ul {
-	margin: 0;
-	padding: 0;
-    color: white;
-}
-.nav li {
-	margin: 0 auto;
-	padding: 0;
-	list-style: none;
-	display: inline-block;
-    color: #7a1501;
-}
-.nav a {
-	padding: 3px 12px;
-	text-decoration: none;
-	color: #fff;
-	line-height: 100%;
-}
-.nav a:hover {
-	color: yellow;
-}
-.nav .current a {
-	background: yellow;
-	color: #7a1501;
-	border-radius: 5px;
-}
-
-/* center nav */
-.nav.center ul {
-	text-align: center;
-}
-
-
-button{
-    text-align: center;
-    background-color: #f9da0c; 
-    color: #fff;
-}
-
-footer{
-    margin: 0 auto;
-    padding: 20px;
-    height: 50px;
-    background-color:#f9da0c;
-    color:#7a1501;
-}
-
-@media screen and (max-width: 600px) {
-	.nav {
-		
-		min-height: 50px;
-	}	
-	.nav ul {
-		width: 160px;
-		padding: 5px 0;
-		position: absolute;
-		top: 0;
-		left: 0;
-		border: none;
-		border-radius: 
-	}
-	.nav li {
-		display: none; /* hide all <li> items */
-		margin: 0;
-	}
-	.nav .current {
-		display: block; /* show only current <li> item */
-	}
-	.nav a {
-		display: block;
-		padding: 5px 5px 5px 32px;
-		text-align: left;
-	}
-
-
-}
-
-
-#container{
-    margin-top: 2em;
-    margin-left: 7em;
-    width: 80%;
-    color: #000;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 1.7em;
-}
-
-
-    
-.enroll{
-
-    text-transform: uppercase;
-    
-    
-}
-.enroll_sign{
-    background-color:#f9da0c;
-    padding: 8px;
-    color: #7a1501;
-    line-height: 7em;
-
-}
-
-.top_table{
-    margin: 0 auto;
-    box-sizing: border-box;
-    border-bottom: none;
-    font-weight: 600;
-    color: #000;
-    text-align: center;
-    
-}
-
-
-
-
-.lesson{
-    padding: 20px;
-    font-size: 16px;
-    text-align: center;
-    overflow: hidden;
-}
-section{
-    margin: 0 auto;
-    color: black;
-    font-weight: 400;
-    padding: 2px 2px 2px 2px;
-    width: 80%;
-
-}
-
-
-
-footer{
-    margin: 0 auto;
-    width: 100%;
-    background-color:yellow;
-    align-content: center;
-
-
-}   
-
-
-nav{
-    margin: 0 auto;
+main{
     width:100%;
-    display: inline;
-    text-align: center;
 }
-
-
+.none >a:hover{
+    
+   background-color:#7a1501;
+}
+.fluff{
+    color: white;
+    margin:30px;
+}
+.top{
+    background-color: #7a1501;
+    margin:0;
+    padding: 0;
+}
+.yellow> a {
+    color:#f9da0c;
+}
+nav{
+    height:5rem;
+    width:100%;
+    display:block;
+}
 ul{
-margin: 0 auto    
-    display: inline;
+    display:inline-block;
     list-style:none;
-    line-height:3rem;
-    font-size: 16px;
+    line-height:1rem;
     color: white;
 }
-
-
 li{
-    margin: 0 auto;
-    padding: 10px;
-    display:inline; 
+    padding:1rem;
+    display:inline;
+    float:left;
     height:1rem;
-    font-size:16px;
+    font-size:1rem;
     text-transform:uppercase;
-    color: white;
 }
-.active_one{
-    color: #7a1501;
+.active{
+    
+    background-color: #f9da0c;
 
 }
-.active_one > a{
-    background- color:#f4f004;
-    color:yellow;
+.active > a{
+    color:#7a1501;
 }
 
 a{
     text-decoration: none;
     color: white;
-    
 }
 a:hover{
     background-color: #f9da0c;
-    color: #4d0000;
-    text-decoration: none;
+}
+.fa{
+    visibility: hidden;
+}
+.enroll{
+    background-color:#f9da0c;
     
+    text-transform: uppercase;
+}
+.enroll_sign{
+    padding: 10px;
+    color: #7a1501;
+}
+p{
+    position: relative;
+    top:-120px;
+    padding: 30px;
+}
+    
+.top_table{
+    border-bottom: 1px solid black;
 }
 
+.lesson{
+    padding: 20px;
+    font-size: 14px;
+}
+section{
+    padding: 80px;
+    width: 80%;
+}
+footer{
+    margin-left: 450px;
+    float:left;
+    padding: 20px;
+    height: 15px;
+    background-color:#f9da0c;
+    color:#7a1501;
+}
+
+@media only screen and (max-width:900px){
+    .fa{
+        visibility: visible;
+        color: gray;
+    }
+    .list{
+    width: auto;
+    height: auto;
+    font-size: 28px;
+    border: lightgrey solid .1rem;
+    border-radius: .5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    visibility: visible;
+        
+    }
+    
+    li{
+        visibility: hidden;
+    
+}
 
 @media only screen and (max-width:480px){
     body{ 
-        background-color: #fff;
-        background-image: url(http://geekwiseacademy.com/img/owl-courses.png);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: bottom right;
-}
-    
-    
+        background-image: none;
+    }
     p{
-    margin: 0 auto;
-    font-weight: 700;;
-    font-size: 15px;
-    color:black; 
+        font-size: 15px;
         
-}
-
-.geekwise{
-margin: 0 auto;
+    } 
+    .geekwise{
         height: 500px;
-        float: right;
-    
-    
-}
+    }
+    span{
 
-span{
-    margin: 0 auto;
-    position: bottom;
-    float: right;
-    width: 100%;
-    margin-left: 15em;
-}
+        width: 50%;
+    }
     .active{
         position: relative;
-
+        top:-160px;
         margin-left: 200px;
         visibility: visible;
-}
+    }
     .none{
         visibility: visible;
-}
+    }
 
     
 }
-
-
-

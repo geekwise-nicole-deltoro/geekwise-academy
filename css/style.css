@@ -143,11 +143,11 @@ hr{
         
     }
     
-    #tiff{
+    #bars{
         display:none;
     }
     
-    #tiff:checked~#kao{
+    #bars:checked~#kao{
     display: block;
     visibility: visible;
    
@@ -189,6 +189,14 @@ hr{
       visibility: hidden;
     }
 }
+
+
+
+
+
+
+
+
 
 
 
