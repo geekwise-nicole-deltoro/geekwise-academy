@@ -7,10 +7,16 @@ body{
     margin: 0;
     padding: 0;
 }
+
+
+/*headersection*/
 .top{
     margin: 20px;
     padding: 0;
 }
+
+
+/*navbar*/
 
 nav{
    text-align:center;
@@ -49,6 +55,10 @@ a:hover{
     background-color: #f9da0c;
 }
 
+
+
+/*main owl image*/
+
 .geekwise{
     position: relative;
     top:30px;
@@ -56,6 +66,11 @@ a:hover{
     height: auto;
     text-align: center;
 }
+
+
+/*text content*/
+
+
 h2{
    position: relative;
     top:30px;
@@ -82,6 +97,11 @@ hr{
    text-align: center;
     width: 70%;
 }
+
+
+
+/*icons and text content*/
+
 .bottom{
     height:400px;
     background-color:#7A1501; 
@@ -189,7 +209,6 @@ hr{
       visibility: hidden;
     }
 }
-
 
 
 
