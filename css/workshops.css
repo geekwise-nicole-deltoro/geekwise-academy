@@ -1,182 +1,107 @@
 html,body{
-     margin: 0 auto;
+    margin: 0;
     padding: 0;
-    height: 100%;
-    color: #000;
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
-}    
-
+}
 body{
-    background-color: white;
-    background-image: url(http://geekwiseacademy.com/img/owl-courses.png);
-    background-position: bottom right;
+    margin: 0;
+    padding: 0;
+     background-image: url(http://i.imgur.com/YZOVy0w.png);
+    background-position:top right;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+main{
+    margin: 0;
+    padding: 0;
+    width: 100%;
     
 }
-
-
-header{
-margin: 0 auto;
-background-color: #7a1501;
-height: 180px;
-
+.none >a:hover{
+    
+   background-color:#7a1501;
 }
- 
-#logo{
-    color: #fff;
-    width: 90px;
-    height: 100px;
-        
-}
-
-
-/* nav */
-.nav {
-margin: 0 auto;
-display: inline;
-text-align: center;
-}
-
-.nav ul {
-	margin: 0;
-	padding: 0;
+.fluff{
+    margin: 30px;
     color: white;
 }
-.nav li {
-	margin: 0 auto;
-	padding: 0;
-	list-style: none;
-	display: inline-block;
-    color: #7a1501;
+.top{
+    background-color: #7a1501;
+    margin:0;
+    padding: 0;
 }
-.nav a {
-	padding: 3px 12px;
-	text-decoration: none;
-	color: #fff;
-	line-height: 100%;
+.yellow> a {
+    color:#f9da0c;
 }
-.nav a:hover {
-	color: yellow;
+nav{
+    height:5rem;
+    width:100%;
+    display:block;
 }
-.nav .current a {
-	background: yellow;
-	color: #7a1501;
-	border-radius: 5px;
+ul{
+    display:inline-block;
+    list-style:none;
+    line-height:1rem;
+    color: white;
 }
-
-/* right nav */
-.nav.right ul {
-	text-align: right;
+li{
+    padding:1rem;
+    display:inline;
+    float:left;
+    height:1rem;
+    font-size:1rem;
+    text-transform:uppercase;
 }
-
-/* center nav */
-.nav.center ul {
-	text-align: center;
-}
-
-
-
-
-@media screen and (max-width: 600px) {
-	.nav {
-		position: relative;
-		min-height: 50px;
-	}	
-	.nav ul {
-		width: 160px;
-		padding: 5px 0;
-		position: absolute;
-		top: 0;
-		left: 0;
-		border: none;
-		border-radius: 
-	}
-	.nav li {
-		display: none; /* hide all <li> items */
-		margin: 0;
-	}
-	.nav .current {
-		display: block; /* show only current <li> item */
-	}
-	.nav a {
-		display: block;
-		padding: 5px 5px 5px 32px;
-		text-align: left;
-	}
-	.nav .current a {
-		background: yellow;
-		color: #7a1501;
-        width: 72px;
-        text-align: left;
-	}
-
-	/* on nav hover */
-	.nav ul:hover {
-		background-image: none;
-	}
-	.nav ul:hover li {
-		display: block;
-		margin: 15px;
-	}
-	.nav ul:hover .current {
-		background: none;
-	}
-
-	/* right nav */
-	.nav.right ul {
-		left: auto;
-		right: 0;
-	}
-
-	/* center nav */
-	.nav.center ul {
-		left: 50%;
-		margin-left: -90px;
-	}
-	
-
-
-    .container{
-    margin: 0 auto;
-    float: left;
-    margin-left: 14%;
-    width: 75%;
-    overflow: hidden;
-
-    }
-
-    .content, .content_two, .content_three{
-              text-align: center;
-              font-size: 16px;
-              color: black;
-    }
+.active{
     
-    
-    
-    .button-signup a{
-    color: #7a1501;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
-    font-weight:700;
-    padding: 15px 12px 15px 10px;
-    font-size: .9em;
-    display: block;
-    background-color:#f9da0c;
-    text-align: center;
-}
-
-.yellow-button {
-    color: #7a1501;
-    background-color: #f9da0c
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    padding: 15px 12px 15px 10px;
-    font-size: 1.1em;
     background-color: #f9da0c;
-    text-align: center;
+
+}
+.active > a{
+    color:#7a1501;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    background-color: #f9da0c;
+}
+.fa{
+    visibility: hidden;
+}
+.text{
+   margin: 30px;
+    width: 80%;
+    float: left;
+}
+footer{
+    margin-left: 450px;
+    float:left;
+    background-color:#f9da0c;
+    color:#7a1501;
+}
+@media only screen and (max-width:1000px){
+    .fa-bars{
+        visibility: visible;
+        color: gray;
+    }
+    body{
+        background-image: none;
+    }
+    .list{
+        float: right;
+    width:8%;
+    height: auto;
+    font-size: 40px;
+    border: lightgrey solid .1rem;
+    border-radius: .5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    visibility: visible;
+        
+    }
     
+    ul> li{
+        visibility: hidden;
+    }
