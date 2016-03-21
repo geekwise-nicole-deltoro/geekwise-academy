@@ -9,7 +9,7 @@ body{
     margin: 0;
     padding: 0;
 }
-header{
+main{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -63,8 +63,12 @@ li{
 .active > a{
     color:#7a1501;
 }
-
-
+.fa{
+    visibility: hidden;
+}
+.list{
+    visibility: hidden;
+}
 
 a{
     
@@ -74,17 +78,19 @@ a{
 a:hover{
     background-color: #f9da0c;
 }
-.container_one{
+.section_1{
     width:90%;
 }
-.owl_image{
+span{
     float: left;
+    margin-left: 108px;
     text-align: center;
     position: relative;
     top:4px;
 }
-h1{
+h3{
     font-size: 2.2em;
+    text-align: center;
     float: right;
 }
 section{
@@ -118,35 +124,40 @@ article:nth-of-type(4){
     width: calc(100%/4);
     
 }
-
+footer{
+    float: left;
+    background-color:#f9da0c;
+    color: #7a1501;
+    width: 100%;
+    height:2rem;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
 #today{
-
     padding-top: 7px;
     text-transform: uppercase;
     color:#7a1501;
     text-align: center;
 }
 
-
-
-footer{
-    margin: 0 auto;
-    background-color:#f9da0c;
-    color: #7a1501;
-    width: 100%;
-    height:25em;
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-
-
 @media only screen and (max-width:900px){
-    header{
-        text-align: center;
+    .fa{
+        visibility: visible;
+        color: gray;
+    }
+    .list{
+    width: auto;
+    height: auto;
+    font-size: 28px;
+    border: lightgrey solid .1rem;
+    border-radius: .5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    visibility: visible;
+        
     }
     
-
     li{
         visibility: hidden;
     
@@ -154,7 +165,7 @@ footer{
 
 @media only screen and (max-width:480px){
     section{
-    float:none;
+        float:none;
     line-height: 1.5rem;
     padding-left: 60px;
     height: 1200px;
@@ -163,15 +174,9 @@ footer{
     text-align: left;
     
     }
-    h1{
+    h3{
         position: relative;
         top:-200px;
-    }
-    
-    #container_one{
-        display: block;
-        
-        
     }
     
     article{
@@ -187,7 +192,7 @@ footer{
     .geekwise{
         height: 500px;
     }
-    .owl_img{
+    span{
         visibility: hidden;
     }
     .active{
@@ -202,6 +207,25 @@ footer{
 
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
