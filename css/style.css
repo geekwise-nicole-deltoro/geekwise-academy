@@ -167,9 +167,9 @@ hr{
         display:none;
     }
     
-    #bars:checked~#kao{
+    #bars:checked{
     display: block;
-    visibility: visible;
+    visibility: hidden;
    
 }
    
