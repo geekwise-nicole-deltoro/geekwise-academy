@@ -42,6 +42,11 @@ li{
     background-color: #f9da0c;
 
 }
+
+#navbar{
+    visibility: hidden;
+
+}
 .active > a{
     color:#7a1501;
 }
@@ -171,7 +176,7 @@ hr{
         
     }
     
-    #bars{
+    .bars{
         display:none;
     }
     
