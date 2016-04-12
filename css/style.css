@@ -37,10 +37,7 @@ li{
 
 }
 
-#navbar{
-    visibility: hidden;
 
-}
 .active > a{
     color:#7a1501;
 }
@@ -120,7 +117,7 @@ hr{
     text-align: right;
     visibility: hidden;
 }
-#tiff{
+#bars{
     visibility: hidden;
 }
 .list{
