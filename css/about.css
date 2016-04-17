@@ -31,6 +31,7 @@ main{
     
    background-color:white;
 }
+
 nav{
 
    text-align:center;
@@ -51,6 +52,7 @@ li{
     font-size:1rem;
     text-transform:uppercase;
 }
+
 .active{
     float: left;
     position: relative;
@@ -80,6 +82,7 @@ a:hover{
 }
 .section_1{
     width:90%;
+
 }
 span{
     float: left;
@@ -124,17 +127,20 @@ article:nth-of-type(4){
     width: calc(100%/4);
     
 }
+
 footer{
     float: left;
     background-color:#f9da0c;
     color: #7a1501;
     width: 100%;
-    height:2rem;
+    height:5.2em;
     display: block;
     margin: 0;
-    padding: 0;
+    postion: fixed;
 }
+
 #today{
+    margin-top:2em;
     padding-top: 7px;
     text-transform: uppercase;
     color:#7a1501;
@@ -146,6 +152,7 @@ footer{
         visibility: visible;
         color: gray;
     }
+    
     .list{
     width: auto;
     height: auto;
@@ -166,14 +173,15 @@ footer{
 @media only screen and (max-width:480px){
     section{
         float:none;
-    line-height: 1.5rem;
-    padding-left: 60px;
-    height: 1200px;
-    background-color: #7a1501;
-    color: white;
-    text-align: left;
+        line-height: 1.5rem;
+        padding-left: 60px;
+        height: 1200px;
+        background-color: #7a1501;
+        color: white;
+        text-align: left;
     
     }
+    
     h3{
         position: relative;
         top:-200px;
@@ -184,23 +192,28 @@ footer{
         top:-250px;
         
     }
+    
     p{  
         
         font-size: 15px;
         
-    } 
+    }
+    
     .geekwise{
         height: 500px;
     }
+    
     span{
         visibility: hidden;
     }
+    
     .active{
         position: relative;
         top:-170px;
         margin-left: 250px;
         visibility: visible;
     }
+    
     .none{
         visibility: visible;
     }
